@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/admin
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
 mybatis:
   mapper-locations: classpath:/mapper/**/*.xml
